@@ -48,7 +48,7 @@ Managed Agents are the execution layer. An agent can clone a repo, fetch governa
 The validation agent requires:
 - **Model:** `claude-sonnet-4-6` (Sonnet catches more issues than Opus in review roles)
 - **Tools:** `agent_toolset_20260401` (bash, file ops, web)
-- **MCP:** oddkit at `https://oddkit.klappy.dev/mcp` with `always_allow` permission
+- **MCP:** oddkit at `[YOUR ODDKIT MCP URL, e.g. https://oddkit.klappy.dev/mcp]` with `always_allow` permission
 - **Environment:** cloud container with unrestricted networking
 
 The Anthropic API key is stored in project instructions alongside the GitHub PAT.
@@ -59,7 +59,7 @@ The Anthropic API key is stored in project instructions alongside the GitHub PAT
 
 ### Frontmatter Validation
 
-> Validate the frontmatter of `[FILE]` on branch `[BRANCH]` in `klappy/klappy.dev`.
+> Validate the frontmatter of `[FILE]` on branch `[BRANCH]` in `[OWNER]/[REPO]`.
 > 1. Clone the repo using the GitHub PAT
 > 2. Checkout the branch
 > 3. Fetch `canon/meta/frontmatter-schema.md` via oddkit — authoritative schema
@@ -70,7 +70,7 @@ The Anthropic API key is stored in project instructions alongside the GitHub PAT
 
 ### Full Governance Pass
 
-> Validate all changed files on branch `[BRANCH]` in `klappy/klappy.dev` against all applicable canon constraints.
+> Validate all changed files on branch `[BRANCH]` in `[OWNER]/[REPO]` against all applicable canon constraints.
 > 1. Clone the repo, checkout the branch
 > 2. Run `git diff --name-only origin/main` to identify changed files
 > 3. For each changed file, fetch applicable constraints via oddkit:
