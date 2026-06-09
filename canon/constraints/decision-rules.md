@@ -17,12 +17,12 @@ execution_posture: governing
 
 ## Description
 
-Decision rules describe how decisions are made when multiple valid options exist. They complement Constraints by answering "how I choose." Rules include: outcomes before implementation, borrow-bend-break-build progression, KISS, DRY with isolation, explicit state, recoverability over perfection, visible tradeoffs, optimizing for the next maintainer, UI carrying explanation, verification before completion, escalation only when defaults fail, admitting uncertainty early, preferring one-shot builds over steering misses, and hard-coding protocols (not domain tables).
+Decision rules describe how decisions are made when multiple valid options exist. They complement Constraints by answering "how I choose." Rules include: outcomes before implementation, borrow-bend-break-beget-bide-build progression, KISS, DRY with isolation, explicit state, recoverability over perfection, visible tradeoffs, optimizing for the next maintainer, UI carrying explanation, verification before completion, escalation only when defaults fail, admitting uncertainty early, preferring one-shot builds over steering misses, and hard-coding protocols (not domain tables).
 
 ## Operating Constraints
 
 - MUST define outcome before choosing tools, architecture, or code
-- MUST follow Borrow → Bend → Break → Build progression; building from scratch requires explicit justification
+- MUST follow Borrow → Bend → Break → Beget → Bide → Build progression (see `canon/methods/borrow-bend-break-beget-build.md` and `canon/constraints/borrow-evaluation-before-implementation.md`); building from scratch requires explicit justification
 - MUST choose simplest solution that plausibly works; add complexity only when simplicity demonstrably fails
 - MUST NOT consider work complete unless it is verified with evidence
 - MUST prefer one-shot builds over steering multi-turn misses; fix inputs and restart clean
@@ -93,24 +93,27 @@ I define the outcome I care about before choosing tools, architectures, or code.
 
 ---
 
-## 2. Borrow → Bend → Break → Build
+## 2. Borrow → Bend → Break → Beget → Bide → Build
 
-I follow a progression when deciding how much to create from scratch.
+I follow a progression when deciding how much to create from scratch. The canonical 6B sequence supersedes the earlier four-step framing; see `canon/methods/borrow-bend-break-beget-build.md` for the method and `canon/constraints/borrow-evaluation-before-implementation.md` for the planning-mode artifact this progression requires.
 
 **The order:**
 
 1. **Borrow** — Use an existing tool as-is
-2. **Bend** — Extend or configure an existing tool
-3. **Break** — Fork or partially replace an existing tool
-4. **Build** — Create something new from components
+2. **Bend** — Compose or repurpose an existing tool for the context
+3. **Break** — Use borrowed and bent tools until they reveal what's genuinely missing
+4. **Beget** — Offload the missing piece to someone else who can own and build it in parallel
+5. **Bide** — When the field is visibly converging toward a substrate that doesn't yet exist, wait — with a tripwire and an inspection step against named criteria
+6. **Build** — Create something new only when nobody else can carry it and waiting cannot resolve it
 
 **How I apply this**
 • I start at Borrow and justify moving down the list
-• Building from scratch requires explicit justification
+• Building from scratch requires explicit justification, traced to a specific Break that Beget and Bide could not address
 
 **Signals this rule was violated**
 • Reinventing something stable and well-understood
 • Forking without a clear maintenance plan
+• A Bide declared without a tripwire, or skipped silently
 
 ---
 

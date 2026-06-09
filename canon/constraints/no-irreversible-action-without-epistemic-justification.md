@@ -40,7 +40,7 @@ The justification must demonstrate that the commitment is warranted — not mere
 
 1. The relevant exploration has been conducted, not skipped.
 2. The decision or artifact meets the Definition of Done.
-3. The epistemic mode transition (exploration → execution) was intentional, not accidental.
+3. The epistemic mode transition (exploration → planning → execution) was intentional, not accidental.
 
 If justification cannot be provided, the action remains in exploration or planning. It does not advance.
 
