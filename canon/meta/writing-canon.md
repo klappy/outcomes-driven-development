@@ -11,7 +11,7 @@ epoch: E0005
 date: 2026-02-09
 complements: "canon/meta/TEMPLATE.md, docs/TEMPLATE.md, canon/meta/agent-executable-outline.md, canon/constraints/definition-of-done.md, canon/methods/self-audit.md, docs/oddkit/IMPL-writing-canon-gate.md"
 derives_from: "canon/values/axioms.md (Axiom 2 — A Claim Is a Debt)"
-governs: "All documents in canon/, odd/, and docs/ directories"
+governs: "All documents in canon/, odd/, docs/, and writings/ directories"
 ---
 
 # Writing Canon — Progressive Disclosure and Topographic Navigation
