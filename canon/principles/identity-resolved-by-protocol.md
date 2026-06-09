@@ -67,7 +67,7 @@ Every cross-reference is a `klappy://` URI. The renderer (Lovable, claude.ai, ag
 
 ### In canon docs
 
-Same as writings. Cross-references between canon, docs, and odd documents use `klappy://` URIs. The `derives_from`, `complements`, `supersedes`, and similar frontmatter fields all use `klappy://` URIs.
+Same as writings. Cross-references between canon, docs, and odd documents use `klappy://` URIs. The `derives_from`, `complements`, `supersedes`, and similar frontmatter fields SHOULD use `klappy://` URIs in new authoring; the resolver normalizes existing path-shaped values per `klappy://canon/constraints/superseded-by-shape-normalization` so coexistence with path-form metadata is not a violation and does not require a mass rewrite.
 
 ### In renderers
 
@@ -98,15 +98,15 @@ The principle survives all three falsifiers as scoping refinements rather than r
 Same architectural answer applies to other surfaces where state is expressed as authored content:
 
 - **README index tables** that list current children of a folder.
-- **Frontmatter cross-reference fields** (`complements:`, `related:`, `derives_from:`) that hardcode URIs that should resolve at read time.
+- **Frontmatter cross-reference *list membership*** — i.e., the question of *which* documents currently complement or derive from this one (`complements:`, `related:`, `derives_from:`). The individual entries staying as `klappy://` URIs is correct under this principle; what is potentially projection-rot is the *list itself* being maintained by hand instead of computed from the graph.
 - **Glossary entries** that reference defining articles.
 - **Navigation menus** that hardcode current canonical paths.
 
-Each of those is a cached projection of state. Each rots independently. The fix is the same — move the projection into the protocol layer. v1 of this principle ships only with link rot fixed via `oddkit_resolve`. The other surfaces become deferred work; when their pain is acute, the principle's prior application gives the architectural answer.
+Each of those is a cached projection of state. Each rots independently. The fix is the same — move the projection into the protocol layer. v1 of this principle ships only with link rot fixed via `oddkit_resolve`; authored URIs in frontmatter remain the correct interim authoring shape, and the question of whether the surrounding list should be authored or computed is deferred. When that pain is acute, the principle's prior application gives the architectural answer.
 
 ## What This Demands
 
-Of authors: write identity, not location. `klappy://` URIs only.
+Of authors: write identity, not location. Prefer `klappy://` URIs in body links and frontmatter. Path-shaped values in `superseded_by` and other supersession-adjacent frontmatter remain valid per `klappy://canon/constraints/superseded-by-shape-normalization` — the resolver normalizes across the allowed shapes, and existing path-form metadata in sibling canon does not need to be rewritten en masse to satisfy this principle.
 
 Of canon governance: ban hardcoded location patterns at lint time (`oddkit_audit` — separate spec) so the principle is mechanically enforced.
 
