@@ -11,7 +11,7 @@ epoch: E0007
 date: 2026-04-09
 derives_from: "canon/meta/frontmatter-schema.md, canon/values/axioms.md"
 complements: "canon/meta/writing-canon.md, canon/constraints/definition-of-done.md"
-governs: "All PRs that add or modify files in writings/, canon/, odd/, or docs/"
+governs: "All PRs that add or modify files in writings/ — the surface the documented CI frontmatter job runs on. Frontmatter quality in canon/, odd/, and docs/ is governed by separate gauntlets (canon-integration-audit, frontmatter-schema), not by this rule's CI automation."
 ---
 
 # Frontmatter Validation Before Merge — No Exceptions

@@ -74,6 +74,8 @@ Tools that MUST emit both `server_time` and `debug.generated_at`:
 - `oddkit_gate`
 - `oddkit_challenge`
 - `oddkit_encode`
+- `oddkit_validate` (reads canon to check completion claims against required artifacts)
+- `oddkit_resolve` (reads canon to resolve URIs and references)
 - `telemetry_policy` (reads canon)
 
 Tools that MUST emit `server_time` only (no `generated_at`):

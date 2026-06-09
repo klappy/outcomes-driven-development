@@ -170,7 +170,7 @@ The dream-house essay session (revs 0–23) is the case study that surfaced all 
 - **Rev 22:** Managed Agent caught the `derives_from` list violation.
 - **Rev 23:** Two new canon docs written, cross-reference graph closed, essay integration complete.
 
-Without this audit, the gaps closed at rev 22 and rev 23 respectively. With this audit and its tool wiring, they would have closed at rev 0 and rev 5. Eighteen rounds of revision work would have operated against canonical cross-reference rather than accumulating integration debt.
+Without this audit, the gaps closed at rev 22 and rev 23 respectively. With this audit and its tool wiring, they would have closed at rev 0 (adjacent-canon), rev 5 (concept), and rev 21 (validator-completeness). Eighteen rounds of revision work would have operated against canonical cross-reference rather than accumulating integration debt, and the rev-21 same-session validator would have caught the type-discipline gap before the independent Managed Agent had to surface it.
 
 The claim is not that every future session needs 23 revisions. The claim is that every future session has integration surfaces — concepts, claims, validators — and those surfaces are currently un-checked by the existing gauntlets. The canon-integration audit is the check.
 
