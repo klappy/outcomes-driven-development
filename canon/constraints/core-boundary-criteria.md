@@ -20,11 +20,11 @@ governs: "Routing of documents across a federated knowledge base: the portable c
 
 > Three homes, one test each. The portable core holds what any adopter needs: principles, constraints, and methods whose substance survives leaving their birthplace. An overlay holds the maintainer's adjudications: chosen styles, identity, relationships, house genres, and frameworks still under personal validation. A tool repository holds that tool's user manual and maintenance manual — nothing else. The instance appearing as *proof* inside a core document is healthy provenance; the instance appearing as the *subject* is a routing error.
 
-## Description
+## Summary — One Document, One Home, Decided by Substance Not Topic
 
 A federated knowledge base shards into a portable core, one or more overlays, and tool repositories. Every document has exactly one home, declared by physical membership and authority — never inferred from topic, path, or vocabulary. This constraint defines how to decide that home, how to smell a misrouted document, and what evidence a routing decision must carry. It was extracted from a live bifurcation in which every criterion below was minted by a maintainer correction to an over- or under-eager routing call.
 
-## The Criteria
+## The Criteria — Seven Tests, Each Minted From a Maintainer Correction
 
 1. **Topic is not the routing criterion.** A document routes on whether *its substance* is portable, not on what domain it mentions. A principle about voice can be universal; a principle about caching can be parochial. Yanking documents by category ("it talks about writing") is the failure, not the discipline.
 
@@ -40,7 +40,7 @@ A federated knowledge base shards into a portable core, one or more overlays, an
 
 7. **Documents travel with their derivation chains.** A document whose `derives_from` ancestry lives in the core belongs in the core, absent a stronger criterion. Stranding a document from everything it derives from is a smell that the routing followed topic, not substance.
 
-## Smell Tests
+## Smell Tests — Score the Prose, Exempt the URIs, Then Read Before Judging
 
 Run these against a candidate corpus; score prose only — identity URIs are frozen opaque keys and are exempt:
 
@@ -53,7 +53,7 @@ Run these against a candidate corpus; score prose only — identity URIs are fro
 
 A high score is a trigger to read, not a verdict. Every signal above has a legitimate core use as proof (criterion 5).
 
-## Failure Modes
+## Failure Modes — Every One Observed in a Live Bifurcation, None Hypothetical
 
 - **Topic-based yanking** — removing portable principles because their examples wear instance clothing. (Observed: voice and architecture principles nearly pulled for mentioning writing and the tool.)
 - **Body-text routing** — selecting movers by string-matching routing markers in document bodies; documents that *quote* the marker travel by accident. Routing fields must be parsed from frontmatter only. (Observed: the bifurcation DR shipped itself to two repos by quoting the enum.)
@@ -63,21 +63,21 @@ A high score is a trigger to read, not a verdict. Every signal above has a legit
 - **Literal operational leakage** — adopters copy-pasting the maintainer's repo names and URLs from core templates.
 - **Double-homing** — the same document maintained in two repos without a declared canonical copy; redundant state invites drift.
 
-## Verification
+## Verification — The Evidence Every Routing Decision Must Carry
 
 A routing decision or audit PR must carry: (a) the parsed-frontmatter mover list (never a body-grep), (b) read-model parity or delta counts before/after, (c) for each contested document, the criterion number that decided it and one line of why, and (d) for any genericized or split document, which copy is canonical. Disagreement between an audit result and this constraint is itself a finding: fix the document, the organization, or this constraint — and record which.
 
-## Defaults
+## Defaults — Undecided Stays in the Overlay; Migrate Lazily
 
 - When no criterion clearly decides, the document stays in the overlay; the core must be pulled toward quality, not pushed toward volume.
 - Re-voice, genericize, and split lazily — on next edit — unless the document is live-read by a tool, in which case coordinate the split with the tool's read path first.
 - The maintainer's rulings are the calibration data; encode each correction as a worked example under the criterion it refined.
 
-## Status and Evidence
+## Status and Evidence — Working Canon From One Federation, Revisable on the Second
 
 Working canon, semi-stable. Every criterion was minted from a live maintainer correction during a single program's bifurcation (2026-06-09, ~230 routed documents): each failure mode listed above was observed, not hypothesized, and each is paired with the correction that fixed it. The sample is one federation; the criteria are treated as the working rule for the class of overlay/core/tool-repo splits, revisable on contact with a second federation.
 
-## Retraction Conditions
+## Retraction Conditions — When the Audit Beats the Law, the Law Is the Bug
 
 - A criterion retires if applying it produces a documented misrouting in a second, independent federation — the fix then goes here, not in the routed corpus.
 - Criteria 1 and 5 retire together if a counter-example shows substance and subject cannot be distinguished operationally for some document class.
