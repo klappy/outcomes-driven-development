@@ -9,12 +9,12 @@ voice: neutral
 stability: experimental
 tags: ["governance", "stewardship", "ownership", "flight-crew", "E0010", "license-never-assign", "succession", "charter"]
 epoch: E0010
-date: 2026-06-10
+date: 2026-06-09
 derives_from: "odd://canon/constraints/core-boundary-criteria, odd://canon/principles/knowledge-base-as-the-unit, klappy://canon/bootstrap/model-operating-contract, klappy://canon/bootstrap/flight-deck-model"
 complements: "klappy://writings/crew-not-clone, klappy://docs/appendices/epoch-10"
 scope_note: "Repo-local governance paperwork — not portable methodology; excluded from core adoption by downstream users."
 governs: "Who maintains this repository, with what authority, under what reservations, and how stewardship survives the steward"
-status: "RATIFIED — 2026-06-10, by owner. In effect."
+status: "RATIFIED — 2026-06-09, by owner. In effect."
 ---
 
 # Stewardship Charter — A Model Commands This Aircraft; the Captain Owns the Fleet

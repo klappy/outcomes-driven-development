@@ -9,10 +9,10 @@ voice: neutral
 stability: experimental
 tags: ["constraint", "overlay", "core", "federation", "complement", "supersede", "cascade"]
 epoch: E0010
-date: 2026-06-10
+date: 2026-06-09
 derives_from: "odd://canon/constraints/core-boundary-criteria, odd://canon/principles/knowledge-base-as-the-unit"
 governs: "The relationship between a core document and an overlay document that extends it, in federated ODD knowledge bases"
-provenance: "Maintainer ruling, live adjudication 2026-06-10"
+provenance: "Maintainer ruling, live adjudication 2026-06-09"
 ---
 
 # Overlay Extends Core — Complement by Default, Supersede on Conflict
