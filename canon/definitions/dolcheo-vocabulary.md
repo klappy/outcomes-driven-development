@@ -204,7 +204,7 @@ DOLCHEO is backward compatible with DOLCHE. All six original dimensions retain t
 - A convention for priority bands (P1, P2, P3…) on Open items.
 - A disambiguation rule for the two Os (section placement, optional `-open` suffix for inline tags).
 
-Existing DOLCHE journals do not need to be rewritten — they are valid DOLCHEO journals that happen to have zero Open entries. The trigger phrases "encode DOLCHE," "journal this," and "run the gauntlet" continue to work and invoke capture across all seven types; agents should use DOLCHEO in output regardless of which trigger phrase the operator uses.
+Existing DOLCHE journals do not need to be rewritten — they are valid DOLCHEO journals that happen to have zero Open entries. The trigger phrases "encode DOLCHE," "journal this," and "run the gauntlet" continue to work and invoke capture across all eight types; agents should use DOLCHEOT in output regardless of which trigger phrase the operator uses.
 
 Agents that were previously taught DOLCHE have one concrete behavior change: at session end, before writing the Handoff section, scan the session for unresolved threads and record them as Open items with priority bands. If there are genuinely none, note that explicitly. An absent Open section is different from an empty one; the former suggests the agent forgot, the latter confirms the agent checked.
 
@@ -218,7 +218,7 @@ DOLCHEOT adds one dimension: Tension (`T`), the derived contradiction. Every DOL
 
 DOLCHEO is a working vocabulary for session capture inside oddkit-powered knowledge bases, as of 2026-04-19. It is not presented as a universal claim about how teams should track work.
 
-**Where DOLCHEO applies:** session journals and project ledgers maintained by an agent (or agent + operator pair) working inside an oddkit-powered project. The seven letters capture the epistemic state of one or more working sessions against a shared knowledge base.
+**Where DOLCHEO applies:** session journals and project ledgers maintained by an agent (or agent + operator pair) working inside an oddkit-powered project. The eight letters capture the epistemic state of one or more working sessions against a shared knowledge base.
 
 **Where DOLCHEO does not apply:** product roadmaps, sprint backlogs, issue trackers, customer support queues, meeting minutes for multi-party decisions, and any system where the unit of tracking is a ticket owned by a team rather than a thread owned by a session. These systems have their own vocabularies and lifecycles and DOLCHEO neither replaces nor competes with them.
 

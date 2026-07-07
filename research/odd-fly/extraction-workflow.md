@@ -45,7 +45,8 @@ Screened ≠ moved: "stays-overlay" is a valid, recorded verdict, not a skipped 
 ## Step 4 — Transform (mechanical + one JUDGMENT pass)
 
 ```sh
-grep -v '^target_repo:' "$f" > "../odd/$f"
+mkdir -p "$(dirname "../odd/$f")"
+awk 'BEGIN{fm=0} /^---$/{fm++; print; next} fm==1 && /^target_repo:/{next} {print}' "$f" > "../odd/$f"
 ```
 
 - URI stays `klappy://…` verbatim — grandfathered opaque key (D0002; observed across all 156 in-sync docs). **Do not** re-mint URIs (`odd://` is for docs *born* in ODD, e.g. core-boundary-criteria).
