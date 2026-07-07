@@ -23,8 +23,8 @@ For every file carrying the routing marker, compare against the ODD copy with th
 
 ```sh
 for f in $(grep -rl '^target_repo: "outcomes-driven-development"' canon odd); do
-  if [ ! -f "$ODD/$f" ]; then echo "MISSING: $f";
-  elif ! diff -q <(grep -v '^target_repo:' "$f") <(grep -v '^target_repo:' "$ODD/$f") >/dev/null; then echo "DIFFERS: $f"; fi
+  if [ ! -f "../odd/$f" ]; then echo "MISSING: $f";
+  elif ! diff -q <(grep -v '^target_repo:' "$f") <(grep -v '^target_repo:' "../odd/$f") >/dev/null; then echo "DIFFERS: $f"; fi
 done
 ```
 
@@ -45,7 +45,7 @@ Screened ≠ moved: "stays-overlay" is a valid, recorded verdict, not a skipped 
 ## Step 4 — Transform (mechanical + one JUDGMENT pass)
 
 ```sh
-grep -v '^target_repo:' "klappy.dev/$f" > "odd/$f"
+grep -v '^target_repo:' "$f" > "../odd/$f"
 ```
 
 - URI stays `klappy://…` verbatim — grandfathered opaque key (D0002; observed across all 156 in-sync docs). **Do not** re-mint URIs (`odd://` is for docs *born* in ODD, e.g. core-boundary-criteria).
