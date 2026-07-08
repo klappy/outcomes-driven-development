@@ -1,0 +1,13 @@
+# Proposal — Discernment Transfer Ladder (route-to-core; RESOLVED)
+
+| Field | Value |
+|---|---|
+| Source | `klappy://canon/methods/discernment-transfer-ladder` — `klappy/klappy.dev` @ `e18f6fa` (post-ratification, PR klappy.dev#266), `canon/methods/discernment-transfer-ladder.md` (authored #264) |
+| Target | `canon/methods/discernment-transfer-ladder.md` (staged in this PR); URI unchanged — grandfathered opaque key |
+| Verdict | **route-to-core** — RESOLVED from CONTESTED by captain attestation, 2026-07-07 (ET) |
+| Ruling | Captain, verbatim (filtered): "It seems proven over the past week. Many experiments done over many repos." Ratification clarified as full: "the holes had nothing to do with this. There were other gaps that impacted it" — observed gaps in the proving week were attributable to unrelated causes, not this method. Caveat carried into the doc: "this process is still fragile and needs careful planning and execution and validation." |
+| Criteria | Marked `target_repo: outcomes-driven-development` (#264); criterion 2 now passes — `stability: evolving`, `status: active` after source-side ratification (klappy.dev#266; sibling active-method vocabulary — the source repo has no `active` stability value); ancestors `rulebook-transfer`, `verification-requires-fresh-context`, `models-do-not-mutate-canon`, `critic-cannot-be-resolver` reachable in core (criterion 7) |
+| Transform | Verbatim minus `target_repo`, from the post-update source. Criterion-6 placeholders applied source-side and recorded here: `Covenynt` → `[ORG]`; `0 Context/about.md` → `[ORG-APPROVAL-POLICY-DOC]`; `Brief 07 Step 5 / Brief 08 Phase 2` → `[ORG-PILOT-BRIEF] field phases` (precedent: governance-validation-via-agents `[OWNER]/[REPO]` pass). Kept per criterion 5 (proof, not operational values): worked-example counts (41/11, 37/9, 88/4 → 45/10), model names, the `tra-`/`gaw-` foldout-row citation, Kirigami as tool name |
+| Ratification | Lands into live serve only on the captain's merge, after klappy.dev#266 merges source-side. `klappy://canon` original carries the same ratified text |
+
+**Why (and why it was held).** Cycle 01 held this doc CONTESTED: the routing marker said core while its own `provisional/proposed` frontmatter said overlay (criterion 2 — bets are not doctrine). The dossier existed to collect the maintainer's correction as calibration data, per the criteria doc's own instruction. The correction arrived 2026-07-07: the method is proven — the week's failures traced to unrelated gaps, not the ladder — so the tension resolves to route. The doc now travels with a captain-attributed Provenance and Ratification section so adopters inherit the humility (fragile; plan/execute/validate with fresh context) along with the method.
