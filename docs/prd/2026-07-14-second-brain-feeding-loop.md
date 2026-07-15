@@ -50,7 +50,8 @@ candidate: <observation|principle|constraint> — <one line>
 ```
 
 A flight with nothing to promote writes `candidates: none` — an honest zero, not a
-skipped duty. Cost per flight: one line in a debrief the flight already writes.
+skipped duty. Cost per flight: one line per candidate in a debrief the flight already
+writes (or the single honest-zero line).
 
 ### (b) The batch: a periodic distillation fold flight
 
@@ -77,8 +78,9 @@ flight-sourced canon growth is nonzero weekly with no captain effort beyond merg
 
 ## 4. Tower-load budget (captain's explicit caveat)
 
-Per flight: one debrief line. Captain: merge review of batched canon PRs only.
-Heavy lift: entirely inside the batched fold flight. No new per-flight ceremony.
+Per flight: one debrief line per candidate (or the single honest-zero line). Captain:
+merge review of batched canon PRs only. Heavy lift: entirely inside the batched fold
+flight. No new per-flight ceremony.
 
 ## 5. Decision cards (first OPT = recommendation)
 
