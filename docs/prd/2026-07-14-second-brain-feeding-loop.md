@@ -88,6 +88,13 @@ flight. No new per-flight ceremony.
 2. **Who drafts** — OPT: the tower-sweep seat gains a distillation pass — reuses an existing duty; OPT: a dedicated fold-flight class with its own brief — cleaner mode discipline, more dispatch overhead.
 3. **Where candidates queue** — OPT: harvested from debrief/journal text by the fold flight — zero new infrastructure; OPT: a `canon-candidates` board workstream, one item per candidate — visible but noisy; OPT: an append-only `candidates.foldout.tsv` in this repo — kirigami-native, one more file to tend.
 
+> **RULED (captain, in-session 2026-07-19): all three first-OPT recommendations
+> accepted** — cadence: weekly, riding the existing tower sweep; drafting: the
+> tower-sweep seat gains the distillation pass; candidate queue: harvested from
+> debrief/journal text, no new infrastructure. The seeds branch
+> `seeds/2026-07-18-captains-log` (policies-vs-requirements; rebuild-vs-modify,
+> attribution corrected to Jesse) is the loop's inaugural candidate batch.
+
 ## 6. Rollout
 
 1. Captain merges this PRD (ratifies the direction).
