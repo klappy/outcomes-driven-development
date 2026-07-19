@@ -14,7 +14,7 @@ tags: ["policy", "requirements", "steering", "prd", "candidate-seed"]
 
 ## Summary — Two Artifact Types Have Been Sharing One Name
 
-The program has overloaded the word "policy" to cover everything that shapes AI behavior, from durable abstract guidance down to the specific functional needs of a single build. This seed, crediting an observation from Jessica, proposes splitting the category in two:
+The program has overloaded the word "policy" to cover everything that shapes AI behavior, from durable abstract guidance down to the specific functional needs of a single build. This seed, crediting an observation from Jesse, proposes splitting the category in two:
 
 - **POLICIES** — principles and abstract guidance. Durable, slow-changing, canon-shaped.
 - **REQUIREMENTS** — specific functional needs of a build. Fast-changing, PRD-shaped.
