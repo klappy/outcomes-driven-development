@@ -3,6 +3,7 @@ status: candidate
 date: 2026-07-19
 source: "captain, in-session ruling to the Otto seat (sess_29f844a6), 2026-07-19"
 attribution: "Klappy (thesis); evidence from the 2026-07-18/19 night charter + cloud run + corpus incident"
+derives_from: "klappy://canon/values/trust-kernel — the meta-skill exists to keep expectations honestly managed over time"
 queue: "second-brain feeding loop (docs/prd/2026-07-14-second-brain-feeding-loop.md) — awaiting distillation sweep; promotion is the captain's merge alone"
 ---
 
