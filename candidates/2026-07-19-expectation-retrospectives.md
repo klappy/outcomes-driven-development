@@ -3,6 +3,7 @@ status: candidate
 date: 2026-07-19
 source: "captain, in-session direction to the Otto seat (sess_29f844a6), 2026-07-19 — explicitly a first stab, to refine over time"
 composes_with: "candidates/2026-07-19-learning-to-learn-meta-skill.md (this is loop 3's instrument)"
+derives_from: "klappy://canon/values/trust-kernel — Trust Is Built by Managing Expectations"
 queue: "second-brain feeding loop — awaiting distillation sweep; promotion is the captain's merge alone"
 ---
 
@@ -26,8 +27,10 @@ just code review.
 > meta-expectations management to build and maintain trust in order to
 > establish a collaborative relationship.
 
-The rubric and the retro are not process hygiene — they are **trust
-instruments**. Declared expectations are promises with a shape; the retro is
+This is not a new thesis — it is `klappy://canon/values/trust-kernel`
+("Trust Is Built by Managing Expectations", the value every layer of ODD
+traces to) gaining a new instrument. The rubric and the retro are not process
+hygiene — they are **trust instruments**. Declared expectations are promises with a shape; the retro is
 the audit that keeps the promises honest; each kept (or honestly-missed and
 repaired) expectation compounds into the trust that lets delegation widen.
 The causal chain runs: expectation management → trust → collaboration —
