@@ -1,6 +1,6 @@
 ---
-status: candidate
-pending: captain-ratification
+status: ratified
+ratified_by: "captain, in-session 2026-07-19"
 provenance: "captain's log 2026-07-18 ~12:10 EDT (Bee capture), relayed via Otto seat sess_f7294064"
 title: "The Rebuild-vs-Modify Tipping Point — Naming What 'Technical Debt' No Longer Names"
 tags: ["rebuild", "technical-debt", "layering", "candidate-seed"]
