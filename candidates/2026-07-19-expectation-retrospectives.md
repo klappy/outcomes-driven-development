@@ -19,6 +19,22 @@ learning object: not a correction to the work, but to the process that
 executed the work. In human terms: HR- and sprint-review-class meetings, not
 just code review.
 
+## Why (captain, 2026-07-19 — the parent principle)
+
+> Collaboration works best with an established relationship of trust. Trust
+> is built and maintained by managing expectations. This is the
+> meta-expectations management to build and maintain trust in order to
+> establish a collaborative relationship.
+
+The rubric and the retro are not process hygiene — they are **trust
+instruments**. Declared expectations are promises with a shape; the retro is
+the audit that keeps the promises honest; each kept (or honestly-missed and
+repaired) expectation compounds into the trust that lets delegation widen.
+The causal chain runs: expectation management → trust → collaboration —
+and every existing mechanism (attestations, receipts, verdict-first reports,
+the ratification ledger, the creed itself) is this same chain in different
+clothing: each one is a promise about claims, kept auditable.
+
 ## What this adds that the existing machinery lacks
 
 Outcome validation (G5, DoD) answers *did we build the right thing right*.
