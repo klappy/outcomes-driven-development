@@ -1,10 +1,13 @@
 # First Distillation Sweep — 2026-07-20
 
-**Status: DRAFTS LANDED, AWAITING VALIDATION PASS.** Start time: 2026-07-20
-(per charter dispatch, C1). This report updates incrementally; each seed's
+**Status: TERMINAL — VALIDATED AND CLOSED.** Start time: 2026-07-20 (per
+charter dispatch, C1). This report was built incrementally; each seed's
 disposition and each promotion draft was committed and pushed as it landed —
 see commit history on `sweep/2026-07-20-first-distillation` for the
-incremental trail.
+incremental trail. This sweep's own terminal state: 3 promotions drafted and
+owed as PRs to the dispatch seat (klappy.dev push refused, fallback used);
+3 seeds held with named reasons; 1 seed folded. Nothing here is merged —
+promotion is the maintainer's alone.
 
 ## Verdict
 
@@ -33,7 +36,7 @@ against `klappy/klappy.dev` main.
 
 | ID | Title | Target canon doc | Risk | Evidence honestly flagged |
 |----|-------|-------------------|------|----------------------------|
-| P0011 | Policies vs. Requirements — split an overloaded category | `canon/meta/policies-vs-requirements.md` (new) | Low | Evidence class is a direct captain ratification, not repeated-validator-failure — named as a different evidence class than this pipeline's usual bar. |
+| P0011 | Policies vs. Requirements — split an overloaded category | `canon/meta/policies-vs-requirements.md` (new) | Low | **Below the pipeline's literal floor** (README requires ≥2 independent validations; this has 1 — a direct captain ratification). Drafted anyway as a deliberate, named exception, not a case where the bar was met. |
 | P0012 | Learning to Learn Is the Meta-Skill — triple-loop debrief review | `canon/methods/triple-loop-debrief-review.md` (new) | Low | 5 distinct same-day receipts, 2 repos, 0 cross-session recurrence yet — weaker independence than e.g. P0002's 6 cross-repo occurrences over months. |
 | P0013 | Search Canon Before Designing, Not Just Before Asking | `canon/constraints/mode-discipline-and-bottleneck-respect.md` (append) | Low | 2 design decisions, same incident — below the pipeline's usual ≥2-*independent*-incidents bar; promotion explicitly recommends `deferred pending a second, separate incident` is a legitimate maintainer outcome. Seed 5 ("a cache is a lie in wait") folded in here as supporting evidence, not independently drafted, since its substance duplicates already-stable canon (`odd/constraint/anti-cache-lying.md`, E0005). |
 
@@ -71,4 +74,39 @@ klappy.dev.
 
 ## Validation verdict
 
-(pending — spawning fresh subagent next)
+A fresh, independent subagent (no prior context) reviewed all drafts, the
+report, and the foldout TSV against the PRD's promotion criteria and the
+charter's anti-goals, read-only (findings only, no edits). Full findings:
+
+- **Anti-goal compliance:** OK. All three promotions `status: proposed`;
+  no canon file touched in the klappy.dev clone; `git ls-remote` on
+  klappy.dev shows no trace of any sweep/promotion branch, consistent with
+  the claimed 403 push refusal; no promotion restates an already-settled
+  canon rule as if new.
+- **Promotion Pipeline format fidelity:** OK — all required sections present
+  in all three drafts, matching `TEMPLATE.md` and precedents P0002/P0006.
+- **Evidence honesty:** OK for P0012 and P0013 (both explicitly flag
+  weaker-than-usual evidence). **CONCERN raised on P0011** — its original
+  wording undersold that 1 observation is *below the pipeline's literal
+  floor* ("≥2 independent validations"), not just "a different evidence
+  class." **Fixed post-validation**: P0011's Evidence section (and this
+  report's promotions table above) now states plainly that it fails the
+  numeric bar and that drafting it anyway is a deliberate, named exception
+  for the maintainer to weigh — not a case where the bar was satisfied.
+  P0011's patch was regenerated and re-verified clean after the edit.
+- **Disposition soundness:** OK for all 7 seeds — validator independently
+  re-checked each against actual klappy.dev canon content (not just this
+  report's claims) and found every promote/hold/fold call defensible.
+- **Patch correctness:** OK — all three patches add exactly one new file
+  each, zero stray changes, verified with `git apply --check --stat`.
+- **Scope discipline:** OK — no mention of C2–C5 (Move 4, code tray,
+  gauntlet ninth step, cache freshness) beyond citing the corpus incident
+  as evidence for P0013.
+- **Minor nit (not acted on):** the foldout TSV has 13 columns; kirigami
+  convention is described as "twelve-column" in the PRD. Cosmetic — the
+  extra column (`captain_action_required`) was judged worth keeping for
+  this sweep's specific reporting need over exact column-count conformance.
+
+**Overall validator verdict:** *"Sound enough to hand to the maintainer."*
+The one raised concern (P0011's evidence framing) was fixed in this same
+session before close; the TSV column nit was reviewed and knowingly kept.
