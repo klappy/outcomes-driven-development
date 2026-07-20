@@ -1,4 +1,10 @@
-# Handoff — Weekend Closeout → Next Session (2026-07-19/20)
+# Charter — The Successor Session (First Sweep & Move 4 Readiness)
+
+**Status: DRAFT — activates on the maintainer's word.** Once active, this is
+a charter of delegated stewardship, not a to-do list: crew items C1–C5 are
+delegated for autonomous execution under the standing grants, and every item
+must land in a terminal state — merged+SHA, ruled+recorded, parked+named
+blocker, or closed+reason. Nothing else counts as done.
 
 > Everything from the weekend is terminal or queued; nothing lives in anyone's
 > head. The maintainer's tray is two words and a glance (Move 4 go-word ·
@@ -67,6 +73,26 @@ estimates, and the meta-expectations the new session flies under.
 
 Lines 5–7 plus the retro misses (well-validated / communication / bounded)
 live in the committed debrief: `odd/debriefs/2026-07-19-weekend-closeout.md`.
+
+## 4.5 Grants and boundaries (the authority layer)
+
+**Carried grants:** G5 — validation-against-spec substitutes for maintainer
+sign-off (exclusions: his authorial voice, HUMAN-ONLY(secret),
+irreversible-without-spec). C1 — full-job-scope mints, expiry is rotation.
+Board writes remain seat-guard-denied by design.
+
+**Delegated by this charter:** C1–C5 above, autonomously, terminal-state
+discipline. The sweep (C1) may DRAFT promotion PRs; it may not merge them —
+promotion is the maintainer's alone, by the loop's written anti-goal.
+
+**Explicitly NOT chartered:** storage-lane deletion (separate ruling);
+multi-vendor harnesses (BI-OR8, only-if-ruled); any new meta-machinery
+beyond C4's *proposal*; anything touching M-tray items without their gate.
+
+**Close duty:** the shift's last act is the debrief WITH the expectation
+retro against §6 — even on success — and its candidate lines committed
+durably (odd/debriefs/), per conventions v0.8.0 and the trust-kernel they
+serve.
 
 ## 5. Lane law (fetch, don't recall — one-line map)
 
