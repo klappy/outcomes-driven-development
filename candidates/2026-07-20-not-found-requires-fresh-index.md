@@ -22,6 +22,15 @@ one.
    catch does not scale past the attention of whoever is watching") predicted
    it verbatim.
 
+3. 2026-07-20 ~22:07Z — while acting on the delegated-stewardship ruling
+   itself: `oddkit_resolve` served a stale cached body of
+   `klappy://canon/decisions/models-do-not-mutate-canon` (pre-amendment, no
+   stewardship language) while the search index carried the amended
+   blockquote. Body cache and index cache disagreed within one tool. Settled
+   by reading source-of-truth raw from main. Incident count: three, in one
+   day, across resolve-after-merge, cross-session search, and body-vs-index
+   skew.
+
 **Mechanism owed (over promise).** oddkit should disclose index sha + age in
 every search/resolve response (agents can then *see* staleness), and/or bust
 the index cache on merge. Until then this is agent discipline: on an
