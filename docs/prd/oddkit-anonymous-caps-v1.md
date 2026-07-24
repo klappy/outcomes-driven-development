@@ -82,7 +82,7 @@ A cached read — any response served entirely from the current SHA-keyed R2 ind
 
 ## §4 — Cached-Only Degradation Mode
 
-When an upstream GitHub fetch returns 403, or the per-IP quota from §3 is exhausted, oddkit MUST NOT fail the request outright if a persisted index or content object exists for the requested scope. Instead:
+When an upstream GitHub fetch returns 403, or the per-IP quota from §3 is exhausted, oddkit MUST NOT fail the request outright if a persisted index or content object exists for the requested scope — degradation succeeds over the §5 `rate_limited` error shape. Instead:
 
 - Serve the most recent SHA-keyed index/content from R2.
 - Set an explicit staleness flag in the response envelope (e.g., `debug.stale: true` plus a reason, `upstream_403` or `quota_exhausted`), alongside the existing `debug.generated_at` field (`canon/principles/envelope-time-fields.md`) that already carries the content's build time.
@@ -106,7 +106,7 @@ Every oddkit envelope — success or error, capped or not — carries quota stat
 }
 ```
 
-**On a limit-hit response** specifically, the envelope additionally names which limit was hit and where to go next:
+**On a limit-hit response** specifically — when a metered unit is denied because a §3 window is exceeded *and* §4 cached-only degradation cannot apply (no persisted index/content for the scope) — the envelope additionally names which limit was hit and where to go next. If a persisted index exists, §4 applies instead: serve stale success, do not return `rate_limited`.
 
 ```json
 {
@@ -155,7 +155,7 @@ Per the Spec DoD Convention (`canon/constraints/definition-of-done.md`), complet
 
 1. An anonymous MCP client calling any oddkit tool that only reads cached index/content can make unlimited calls and never receive a rate-limit error.
 2. An anonymous MCP client that triggers an index rebuild or uncached upstream fetch can make up to 40 such calls per rolling hour (or 15 per rolling 10 minutes, whichever trips first) from one IP, and can observe `remaining` decrement in every response envelope, not just at failure.
-3. An anonymous MCP client that exceeds either window can observe a `rate_limited` error naming which limit was hit, the window, `window_reset_at`, and a stated (not-yet-available) upgrade path — never a bare 403.
+3. An anonymous MCP client that exceeds either window, and for which no persisted index/content exists to degrade to (§4), can observe a `rate_limited` error naming which limit was hit, the window, `window_reset_at`, and a stated (not-yet-available) upgrade path — never a bare 403. When a persisted index does exist, §4 / DoD item 4 take precedence: the client observes a successful stale response, not `rate_limited`.
 4. An anonymous MCP client calling oddkit while upstream GitHub is 403'ing, or while its own quota is exhausted, can observe a successful response built from the last persisted index, carrying `debug.stale: true` and a reason, instead of a hard failure — provided a persisted index exists for that scope.
 5. A maintainer re-requesting the `eten-tech-foundation/fluent-platform` scope twice in a row, after the Prerequisite B fix lands, can observe the second call return the same `debug.generated_at` as the first (a cache hit, not a rebuild).
 6. A deployer running oddkit with no `GITHUB_TOKEN_PUBLIC` binding can observe the worker serve requests via unauthenticated GitHub calls automatically, with no crash and no configuration required to boot.
