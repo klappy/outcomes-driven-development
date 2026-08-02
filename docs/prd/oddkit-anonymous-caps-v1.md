@@ -1,6 +1,7 @@
 # PRD — Oddkit Anonymous Caps v1: Meter Rebuilds, Not Requests
 
-**Status:** DRAFT — klappy review required; nothing here is policy until merged.
+Status: ratified: seat (provisional) — Own-Brain Grant (chief-delegation-officer policies/21-own-brain-grant.md, merged d0fa2c0); captain ratification: pending (non-blocking upgrade).
+Execution note: shipping caps to the public service remains gated as irreversible-without-spec (grant §4); this document's ratification covers the knowledge artifact only.
 **Phase:** 0 of 3 in the accounts+billing plan. This PRD covers anonymous caps only. Phases 1–2 (account signup, Stripe billing) are tracked separately and are explicitly out of scope here (§7).
 **Prepared:** 2026-07-24, CDO dispatch seat, from the incident brief handed to this seat directly. No `oddkit_time`/`oddkit_orient` telemetry was available in this sandbox, so no flight ID or live canon fetch is claimed — this draft cites only documents read directly from the repo (listed in §8) and evidence given in the dispatch brief. Flagging the gap per Axiom 4 rather than fabricating flight metadata.
 
