@@ -7,7 +7,7 @@
 ## Evidence
 - seq 19737: seat-boarded sess_503e485c (worker-cron, cowork-scheduled-sweep), 2026-08-03T21:33:41Z.
 - seq 19738: flight-landed, leases_released [], no flight-recorded row between — identical shape to seq 19732–19733 one day earlier.
-- ODD PR #42 state at 2026-08-04T01:0xZ: open, merged:false — the seed naming this failure was on file but not yet law when the failure recurred.
+- ODD PR #42 state at 2026-08-04T01:02Z: open, merged:false — the seed naming this failure was on file but not yet law when the failure recurred.
 - Project doc claude/sweep-registry-hygiene-2026-08-03.md: the sweep's actual record, again only on a side surface the registry does not point to.
 
 ## Proposed canon shape
